@@ -1,0 +1,19 @@
+$TTL    60000
+@               IN      SOA     serverInternetDNSPt.acme.pt.    root.serverInternetDNSPt.acme.pt. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+@               IN      NS      serverInternetDNSPt.acme.pt.
+@	        IN      MX 5    mail.acme.pt.
+
+serverInternetDNSPt      IN      A       1.2.65.10
+
+
+www		IN	A	1.2.65.2
+
+imap		IN	A	1.2.65.2
+pop		IN	A	1.2.65.2
+mail		IN	A	1.2.65.2

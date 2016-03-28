@@ -1,0 +1,36 @@
+ifconfig eth0 192.168.0.2 netmask 255.255.255.248 up
+ip route add default via 192.168.0.1
+
+cfgmaker --global "WorkDir: /var/www/" --global "Options[_]: bits, growright" private@1.2.3.2 private@1.2.3.3 private@1.2.3.4 private@192.168.0.3 private@1.2.3.1 private@1.2.3.17 private@1.2.3.25 private@1.2.3.38 --output /root/mrtg.cfg
+
+mkdir /var/www/mrtg
+env LANG=C /usr/bin/mrtg --daemon /root/mrtg.cfg
+
+indexmaker --title "XPTO Network" --output /var/www/index.html /root/mrtg.cfg
+
+
+/etc/init.d/apache2 start
+/etc/init.d/ssh start
+
+cd /root
+dpkg -i sudo_1.6.9p17-3_i386.deb
+
+cd /home/
+chmod 755 admin
+chown -R admin:admin /home/admin
+
+cd admin
+chmod 700 .ssh
+chmod 644 .bashrc
+chmod 644 .profile
+chmod 600 .bash_history
+chmod 644 .bash_logout
+
+cd .ssh
+chmod 644 authorized_keys
+chmod 644 id_rsa.pub
+chmod 600 id_rsa
+
+cd /etc/
+chmod 644 passwd
+chmod 640 shadow

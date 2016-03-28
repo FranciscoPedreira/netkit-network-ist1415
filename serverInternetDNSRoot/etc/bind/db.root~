@@ -1,0 +1,17 @@
+$TTL   60000
+@               IN      SOA     ROOT-SERVER.    root.ROOT-SERVER. (
+                        2006031201 ; serial
+                        28800 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@               IN      NS      ROOT-SERVER.
+ROOT-SERVER.	IN	A	1.2.65.18
+
+pt.			IN 	NS	serverInternetDNSPt.pt.
+serverInternetDNSPt.pt.	IN 	A	1.2.65.10
+
+3.2.1.in-addr.arpa.         IN      NS	   serverDNS1.xpto.pt.
+3.2.1.in-addr.arpa.         IN      NS	   serverDNS2Email.xpto.pt.

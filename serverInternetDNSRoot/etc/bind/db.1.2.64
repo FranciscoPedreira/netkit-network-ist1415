@@ -1,0 +1,19 @@
+; reverse lookup database 
+$TTL    1
+@               IN      SOA     18.65.2.1.in-addr.arpa.    nobody.nowhere. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl 
+                        )
+@                          IN      NS      18.65.2.1.in-addr.arpa.
+18.65.2.1.in-addr.arpa.    IN      A       1.2.65.18
+18         	  PTR        DNSROOT.
+2		  PTR	     acme.pt.
+10         	  PTR        serverInternetDNSPt.pt.
+1		  PTR	     routerInternet.
+9		  PTR	     routerInternet.
+17		  PTR	     routerInternet.
+25		  PTR	     routerInternet.
+

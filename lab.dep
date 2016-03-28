@@ -1,0 +1,14 @@
+pcPorto1: routerPorto switchPorto
+pcPorto2: routerPorto switchPorto
+
+pcFaro1: routerFaro switchFaro
+pcFaro2: routerFaro switchFaro
+
+pcLisboa1: routerCore switchLisboa
+pcLisboa2: routerCore switchLisboa
+
+pcAdmin1: routerCore switchAdmin
+pcAdmin2: routerCore switchAdmin
+pcAdmin3: routerCore switchAdmin
+
+serverMon: routerCore routerFaro routerPorto routerSaida serverBack serverDNS1 serverDNS2Email serverHTTP switchServerPrivado switchServerPublico

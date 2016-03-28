@@ -1,0 +1,24 @@
+$TTL   60000
+@               IN      SOA     serverInternetDNSPt.pt.    root.serverInternetDNSPt.pt. (
+                        2006031201 ; serial
+                        28800 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+@                   IN      NS      serverInternetDNSPt.pt.
+serverInternetDNSPt IN      A       1.2.65.10
+
+xpto                IN      NS      serverDNS1.xpto.pt.
+serverDNS1.xpto     IN      A       1.2.3.2
+
+xpto		    IN      NS      serverDNS2Email.xpto.pt.
+serverDNS2Email.xpto IN	    A	    1.2.3.3
+
+acme		    		    IN	    NS	    serverInternetDNSPt.acme.pt.
+serverInternetDNSPt.acme	    IN      A	    1.2.65.10
+
+
+
+
+

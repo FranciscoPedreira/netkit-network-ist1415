@@ -1,0 +1,38 @@
+ifconfig eth0 1.2.3.3 netmask 255.255.255.240 up
+ip route add default via 1.2.3.1
+
+# Change permissions of the mail spool directory, so that the guest user is
+# allowed to write lock files.
+chmod a+w /var/spool/mail
+# Change permissions of the exim4 configuration file, to avoid errors due to
+# loose permissions
+chmod go-rw /etc/exim4/exim4.conf
+
+/etc/init.d/bind start
+/etc/init.d/exim4 start
+/etc/init.d/inetd start
+/etc/init.d/snmpd start
+/etc/init.d/ssh start
+
+cd /root
+dpkg -i sudo_1.6.9p17-3_i386.deb
+
+cd /home/
+chmod 755 admin
+chown -R admin:admin /home/admin
+
+cd admin
+chmod 700 .ssh
+chmod 644 .bashrc
+chmod 644 .profile
+chmod 600 .bash_history
+chmod 644 .bash_logout
+
+cd .ssh
+chmod 644 authorized_keys
+chmod 644 id_rsa.pub
+chmod 600 id_rsa
+
+cd /etc/
+chmod 644 passwd
+chmod 640 shadow

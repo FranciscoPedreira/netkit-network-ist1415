@@ -1,0 +1,21 @@
+ifconfig eth0 1.2.65.26 netmask 255.255.255.248 up
+ip route add default via 1.2.65.25
+
+/etc/init.d/ssh start
+
+cd ~
+chmod 755 root/
+
+cd /root/
+chmod 700 .ssh
+chmod 644 .bashrc
+chmod 644 .profile
+
+cd .ssh
+chmod 600 id_rsa
+chmod 644 id_rsa.pub
+chmod 644 known_hosts
+
+touch /hostlab/$HOSTNAME.ready
+cd /root
+screen -c /root/screenrc

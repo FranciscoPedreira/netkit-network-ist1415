@@ -1,0 +1,46 @@
+ifconfig eth0 1.2.3.4 netmask 255.255.255.240 up
+ip route add default via 1.2.3.1
+
+/etc/init.d/apache2 start
+a2enmod ssl
+/etc/init.d/apache2 restart
+
+rm /etc/apache2/sites-available/default
+cd /etc/apache2/sites-enabled
+ln -s /etc/apache2/sites-available/clientes.xpto.pt
+ln -s /etc/apache2/sites-available/www.xpto.pt
+rm 000-default
+
+a2ensite clientes.xpto.pt
+
+/etc/init.d/apache2 restart
+/etc/init.d/snmpd start
+/etc/init.d/ssh start
+/etc/init.d/cron start
+
+cd /root
+dpkg -i sudo_1.6.9p17-3_i386.deb
+dpkg -i rsync_3.0.3-2_i386.deb
+
+cd /home/
+chmod 755 admin
+chown -R admin:admin /home/admin
+
+cd admin
+chmod 700 .ssh
+chmod 644 .bashrc
+chmod 644 .profile
+chmod 600 .bash_history
+chmod 644 .bash_logout
+
+cd .ssh
+chmod 644 authorized_keys
+chmod 644 id_rsa.pub
+chmod 600 id_rsa
+
+cd /etc/
+chmod 644 passwd
+chmod 640 shadow
+
+cd /root
+chmod 700 .ssh/id_rsa

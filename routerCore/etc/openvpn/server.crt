@@ -1,0 +1,71 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=PT, ST=Lisboa, L=Lisboa, O=XPTO, OU=xpto, CN=xpto
+        Validity
+            Not Before: May 22 08:21:28 2015 GMT
+            Not After : May 19 08:21:28 2025 GMT
+        Subject: C=PT, ST=Lisboa, L=Lisboa, O=xpto, OU=xpto, CN=router
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:d3:35:7c:2f:bf:85:6a:8b:72:d8:01:b9:91:01:
+                    84:95:d6:25:50:10:9d:23:d8:a2:5c:95:59:2a:e6:
+                    b4:ec:bc:8f:93:8f:48:8b:e0:87:16:a9:20:a8:be:
+                    9e:28:fd:d9:f4:9e:41:e1:ce:96:fe:19:01:ee:a1:
+                    68:c7:48:6d:a9:77:86:98:e2:d0:8c:06:ae:ef:04:
+                    3a:23:cf:8c:8b:9d:46:8e:51:8d:c3:6d:fe:d3:08:
+                    d4:40:6d:b7:b0:9c:ac:59:bb:e0:3b:2c:b7:4e:98:
+                    d5:a2:2a:6e:18:1c:1f:81:e2:f0:03:dd:89:7d:27:
+                    3a:26:8d:e2:5a:8b:60:9d:d7
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Server
+            Netscape Comment: 
+                Easy-RSA Generated Server Certificate
+            X509v3 Subject Key Identifier: 
+                C7:70:00:D4:B1:96:1A:54:29:8B:D8:E4:87:38:FC:3A:5F:D8:E4:79
+            X509v3 Authority Key Identifier: 
+                keyid:BE:72:3B:B8:19:31:40:A3:FB:F3:99:23:60:4D:E3:77:9D:6A:3B:C2
+                DirName:/C=PT/ST=Lisboa/L=Lisboa/O=XPTO/OU=xpto/CN=xpto
+                serial:E8:94:22:E7:70:E5:B9:28
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+    Signature Algorithm: sha1WithRSAEncryption
+        06:c0:ca:eb:62:a2:ba:07:80:c8:a1:d3:00:bf:b2:41:cc:4c:
+        42:d9:75:bc:2d:9a:c3:0e:9b:64:55:df:86:46:6e:61:40:4a:
+        73:17:1e:ad:00:ba:65:e0:25:19:d2:d8:99:90:3a:fd:6b:b5:
+        19:5c:09:da:03:fb:5b:0a:f8:13:c5:6e:50:5d:74:0d:6b:cf:
+        ef:76:d7:03:e4:a8:6f:9e:f2:7c:7a:6a:52:77:88:14:da:65:
+        34:3d:fd:22:76:97:e2:a1:9a:56:aa:2a:c2:fa:15:1e:cb:1c:
+        82:58:74:ca:b2:3c:6a:b4:18:49:47:aa:db:fb:1b:1c:c5:ad:
+        11:84
+-----BEGIN CERTIFICATE-----
+MIIDXDCCAsWgAwIBAgIBATANBgkqhkiG9w0BAQUFADBcMQswCQYDVQQGEwJQVDEP
+MA0GA1UECBMGTGlzYm9hMQ8wDQYDVQQHEwZMaXNib2ExDTALBgNVBAoTBFhQVE8x
+DTALBgNVBAsTBHhwdG8xDTALBgNVBAMTBHhwdG8wHhcNMTUwNTIyMDgyMTI4WhcN
+MjUwNTE5MDgyMTI4WjBeMQswCQYDVQQGEwJQVDEPMA0GA1UECBMGTGlzYm9hMQ8w
+DQYDVQQHEwZMaXNib2ExDTALBgNVBAoTBHhwdG8xDTALBgNVBAsTBHhwdG8xDzAN
+BgNVBAMTBnJvdXRlcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA0zV8L7+F
+aoty2AG5kQGEldYlUBCdI9iiXJVZKua07LyPk49Ii+CHFqkgqL6eKP3Z9J5B4c6W
+/hkB7qFox0htqXeGmOLQjAau7wQ6I8+Mi51GjlGNw23+0wjUQG23sJysWbvgOyy3
+TpjVoipuGBwfgeLwA92JfSc6Jo3iWotgndcCAwEAAaOCASowggEmMAkGA1UdEwQC
+MAAwEQYJYIZIAYb4QgEBBAQDAgZAMDQGCWCGSAGG+EIBDQQnFiVFYXN5LVJTQSBH
+ZW5lcmF0ZWQgU2VydmVyIENlcnRpZmljYXRlMB0GA1UdDgQWBBTHcADUsZYaVCmL
+2OSHOPw6X9jkeTCBjgYDVR0jBIGGMIGDgBS+cju4GTFAo/vzmSNgTeN3nWo7wqFg
+pF4wXDELMAkGA1UEBhMCUFQxDzANBgNVBAgTBkxpc2JvYTEPMA0GA1UEBxMGTGlz
+Ym9hMQ0wCwYDVQQKEwRYUFRPMQ0wCwYDVQQLEwR4cHRvMQ0wCwYDVQQDEwR4cHRv
+ggkA6JQi53DluSgwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0G
+CSqGSIb3DQEBBQUAA4GBAAbAyutioroHgMih0wC/skHMTELZdbwtmsMOm2RV34ZG
+bmFASnMXHq0AumXgJRnS2JmQOv1rtRlcCdoD+1sK+BPFblBddA1rz+921wPkqG+e
+8nx6alJ3iBTaZTQ9/SJ2l+KhmlaqKsL6FR7LHIJYdMqyPGq0GElHqtv7GxzFrRGE
+-----END CERTIFICATE-----

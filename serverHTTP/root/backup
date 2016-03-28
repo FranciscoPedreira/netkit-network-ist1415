@@ -1,0 +1,1 @@
+rsync -av -O --delete -e ssh ~/../var/www/clientes.xpto.pt/ admin@192.168.0.3:/backupClientes
